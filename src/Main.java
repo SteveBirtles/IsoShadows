@@ -123,7 +123,7 @@ public class Main extends Application {
                                     double q2 = v;
                                     double r2 = w-0.5;
 
-                                    gc.setFill(Color.CYAN);
+                                    gc.setFill(Color.rgb(64, 192, 64));
                                     gc.fillPolygon(new double[]{x1, x2, x3, x4}, new double[]{y1, y2, y3, y4}, 4);
 
                                     if (w > 0) {
@@ -132,7 +132,7 @@ public class Main extends Application {
                                         //gc.strokeLine(mouseX, mouseY, (x2+x3)/2,(y2+y3)/2+HALF_HEIGHT);
                                         //gc.strokeLine(mouseX, mouseY, (x3+x4)/2,(y3+y4)/2+HALF_HEIGHT);
 
-                                        if (q0 > q1) {
+                                        /*if (q0 > q1) {
                                             double dx = p1 - p0;
                                             double dy = q1 - q0;
                                             double l = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
@@ -143,11 +143,12 @@ public class Main extends Application {
                                         }
                                         else {
                                             gc.setFill(Color.rgb(64,64,64));
-                                        }
+                                        }*/
 
+                                        gc.setFill(Color.rgb(64, 64, 64));
                                         gc.fillPolygon(new double[]{x3, x4, x4, x3}, new double[]{y3, y4, y4 + FULL_HEIGHT, y3 + FULL_HEIGHT}, 4);
 
-                                        if (p0 > p2) {
+                                        /*if (p0 > p2) {
                                             double dx = p2 - p0;
                                             double dy = q2 - q0;
                                             double l = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2));
@@ -158,8 +159,9 @@ public class Main extends Application {
                                         }
                                         else {
                                             gc.setFill(Color.rgb(64,64,64));
-                                        }
+                                        }*/
 
+                                        gc.setFill(Color.rgb(192, 192, 192));
                                         gc.fillPolygon(new double[]{x2, x3, x3, x2}, new double[]{y2, y3, y3 + FULL_HEIGHT, y2 + FULL_HEIGHT}, 4);
 
 
